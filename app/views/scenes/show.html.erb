@@ -1,0 +1,4 @@
+<h1><%= @scene.date %>, <%= @scene.time %>, <%= @scene.location %></h1>
+<p><%= @scene.story_body %></p>
+
+<%= link_to "Admin: Edit this scene", edit_scene_path(@scene) %> | <%= link_to "Admin: !! DELETE this scene !!", @scene, confirm: "Are you sure that you want to delete this scene?", method: :delete %></p>

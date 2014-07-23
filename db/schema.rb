@@ -11,16 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140723184711) do
+ActiveRecord::Schema.define(version: 20140723194334) do
 
   create_table "scenes", force: true do |t|
-    t.date     "date"
-    t.time     "time"
     t.string   "location"
     t.text     "story_body"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "parent_scene_id"
+    t.string   "time"
+    t.string   "date"
   end
 
   create_table "user_scenes", force: true do |t|
