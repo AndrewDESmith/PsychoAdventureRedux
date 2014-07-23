@@ -45,7 +45,7 @@ class ScenesController < ApplicationController
   def destroy
   	@scene = Scene.find(params[:id])
   	@scene.destroy
-  	redirect_to scenes_url
+    redirect_to scenes_url
   end
 
   private
