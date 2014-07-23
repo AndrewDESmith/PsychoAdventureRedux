@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140723180957) do
+ActiveRecord::Schema.define(version: 20140723182823) do
 
   create_table "scenes", force: true do |t|
     t.date     "date"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20140723180957) do
     t.text     "story_body"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "parent_scene_id"
   end
 
   create_table "user_scenes", force: true do |t|
