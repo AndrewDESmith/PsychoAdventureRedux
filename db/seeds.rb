@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+class AddInitialScenes < ActiveRecord::Migration
+	def up
+		Scene.create(date: "July 1, 19XX", time: "12:00am", location: "Planet Earth", story_body: "Test seed story_body entry.", relevant_clue: false)
+	end
+
+	def down
+		Scene.delete_all
+	end
+end
