@@ -4,3 +4,7 @@
 <p>Admin: Create a new branch (make this into a link).  (1) Need to be able to order parent_scene_id and child_scene_id.  (2) Also need to be able to save data remotely so that all admins do not have to recreate each entry locally.<p>
 
 <%= link_to "Admin: Back to all scenes.", scenes_path %> | <%= link_to "Admin: Edit this scene", edit_scene_path(@scene) %> | <%= link_to "Admin: !! DELETE this scene !!", "/scenes/#{@scene.id}", confirm: "Are you sure that you want to delete this scene?", method: :delete %></p>
+
+<% if @scene.parent_scene_id == 1 %>
+	<%= link_to "Choice One", "/scenes/2" %>
+<% end %>

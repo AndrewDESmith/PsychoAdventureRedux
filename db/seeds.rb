@@ -16,3 +16,12 @@ Scene.create(location: "Planet Mars", story_body: "Test seed story_body entry nu
 # User.create(character_name: "AndrewB", email: "andrewb@email.com", crypted_password: "password")
 
 # User.create(character_name: "PatS", email: "pats@email.com", crypted_password: "password")
+
+
+# <% scene_limit = 1 %>
+# <% for(i = 0, i < scene_limit, i++) %>
+# 	<% case @scene.parent_scene_id %>
+# 	<% when i %>
+# 		<%=  link_to "Choice One", "/scenes/i" %>
+# 	<% end %>
+# <% end %>
