@@ -6,12 +6,13 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-class AddInitialScenes < ActiveRecord::Migration
-	def up
-		Scene.create(date: "July 1, 19XX", time: "12:00am", location: "Planet Earth", story_body: "Test seed story_body entry.", relevant_clue: false)
-	end
 
-	def down
-		Scene.delete_all
-	end
-end
+Scene.create(location: "Planet Earth", story_body: "Test seed story_body entry.", parent_scene_id: 1, time: "12:00am", date: "July 1, 19XX", relevant_clue: false)
+
+Scene.create(location: "Planet Mars", story_body: "Test seed story_body entry numero dos.", parent_scene_id: 2, time: "8:00am", date: "July 1, 20XX", relevant_clue: true)
+
+# User.create(character_name: "AndrewS", email: "andrews@email.com", crypted_password: "password", salt: nil, remember_me: nil, remember_me_token_expires_at: nil)
+
+# User.create(character_name: "AndrewB", email: "andrewb@email.com", crypted_password: "password")
+
+# User.create(character_name: "PatS", email: "pats@email.com", crypted_password: "password")
