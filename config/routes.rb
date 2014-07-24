@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root :to => 'users#index'
+  root to: 'home#home'
+  
   resources :scenes
   resources :users, :only => [:new, :create]
   resources :user_sessions, :only => [:new, :create, :destroy]
