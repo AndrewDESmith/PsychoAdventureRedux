@@ -6,6 +6,13 @@ class ScenesController < ApplicationController
 
   def show
   	@scene = Scene.find(params[:id])
+
+    @child_scenes = Scene.where(parent_scene_id: @scene[:id])
+  
+    @first_choice = @child_scenes[0]
+    @second_choice = @child_scenes[1]
+    @third_choice = @child_scenes[2]
+
   end
 
   def new
