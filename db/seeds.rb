@@ -7,21 +7,6 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-Scene.create(location: "Planet Earth", story_body: "Test seed story_body entry.", parent_scene_id: 1, time: "12:00am", date: "July 1, 19XX", relevant_clue: false)
+Scene.create(location: "Planet Earth", time: "12:00am", date: "July 1, 19XX", story_body: "Test seed story_body entry.", choice_text: "Example Choice 1",primary_scene_id: 1, secondary_scene_id: 2, tertiary_scene_id: 1, relevant_clue: false, UserScene.scene_id: 121)
 
-Scene.create(location: "Planet Mars", story_body: "Test seed story_body entry numero dos.", parent_scene_id: 2, time: "8:00am", date: "July 1, 20XX", relevant_clue: true)
-
-# User.create(character_name: "AndrewS", email: "andrews@email.com", crypted_password: "password", salt: nil, remember_me: nil, remember_me_token_expires_at: nil)
-
-# User.create(character_name: "AndrewB", email: "andrewb@email.com", crypted_password: "password")
-
-# User.create(character_name: "PatS", email: "pats@email.com", crypted_password: "password")
-
-
-# <% scene_limit = 1 %>
-# <% for(i = 0, i < scene_limit, i++) %>
-# 	<% case @scene.parent_scene_id %>
-# 	<% when i %>
-# 		<%=  link_to "Choice One", "/scenes/i" %>
-# 	<% end %>
-# <% end %>
+Scene.create(location: "Planet Mars",  time: "8:00am", date: "July 1, 20XX", story_body: "Test seed story_body entry numero dos.", choice_text: "Example Choice 2", primary_scene_id: 1, secondary_scene_id: 2, tertiary_scene_id: 2, relevant_clue: true, UserScene.scene_id: 122)

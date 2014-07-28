@@ -11,17 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140723213131) do
+ActiveRecord::Schema.define(version: 20140728183543) do
 
   create_table "scenes", force: true do |t|
     t.string   "location"
     t.text     "story_body"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "parent_scene_id"
     t.string   "time"
     t.string   "date"
     t.boolean  "relevant_clue"
+    t.integer  "primary_scene_id"
+    t.integer  "secondary_scene_id"
+    t.integer  "tertiary_scene_id"
+    t.integer  "cumulative_id"
+    t.text     "choice_text"
   end
 
   create_table "user_scenes", force: true do |t|
