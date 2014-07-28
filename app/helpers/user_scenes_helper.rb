@@ -1,0 +1,2 @@
+module UserScenesHelper
+end

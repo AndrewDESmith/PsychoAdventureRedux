@@ -1,24 +1,15 @@
 <h1><%= @scene.date %>, <%= @scene.time %>, <%= @scene.location %></h1>
 <p><%= @scene.story_body %></p>
 
-<p>Admin: Create a new branch (make this into a link).  (1) Need to be able to order parent_scene_id and child_scene_id.  (2) Also need to be able to save data remotely so that all admins do not have to recreate each entry locally.<p>
 
 
-<% if @scene.parent_scene_id == 1 %>
-	<%= link_to "Choice One", "/scenes/2" %>
+
+
+<% @scene.child_scenes.each do |child| %>
+	<%= form_for UserScene.new do |f| %>
+		<%= hidden_field_tag :scene_id, child.id %>
+		<%= f.submit child.story_body %>
+	<% end %>
+
 <% end %>
-
-<div>
-<%= @first_choice[:story_body] %>
-<%= link_to "first_choice", scene_path(@first_choice.id) %>
-</div>
-<div>
-<%= @second_choice[:story_body] %>
-<%= link_to "second_choice", scene_path(@second_choice.id) %>
-</div>
-<div>
-<%= @third_choice[:story_body] %>
-<%= link_to "third_choice", scene_path(@third_choice.id) %>
-</div>
-
 
