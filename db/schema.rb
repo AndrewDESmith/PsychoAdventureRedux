@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140728183543) do
+ActiveRecord::Schema.define(version: 20140729182844) do
 
   create_table "scenes", force: true do |t|
     t.date     "date"
