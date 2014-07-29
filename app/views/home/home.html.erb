@@ -1,6 +1,11 @@
 
 <h1 class="headline">This is the Doctor speaking...</h1>
 
+<%= form_tag scenes_path, multipart: true do %>
+	<%= file_field_tag :file %>
+	<%= submit_tag "Import CSV (spreadsheet file)" %>
+<% end %>
+
 <div class="off-canvas-wrap" data-offcanvas>
   <div class="inner-wrap">
 
@@ -11,7 +16,7 @@
         <!-- whatever you want goes here -->
         <ul>
           <li><a href="#">Item 1</a></li>
-        
+
         </ul>
     </aside>
 
