@@ -11,11 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140729182844) do
+ActiveRecord::Schema.define(version: 20140729212532) do
 
   create_table "scenes", force: true do |t|
-    t.date     "date"
-    t.time     "time"
     t.string   "location"
     t.text     "story_body"
     t.integer  "parent_scene_id"
@@ -23,6 +21,9 @@ ActiveRecord::Schema.define(version: 20140729182844) do
     t.string   "choice"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "notebook_entry"
+    t.string   "date"
+    t.string   "time"
   end
 
   create_table "user_scenes", force: true do |t|
@@ -30,7 +31,7 @@ ActiveRecord::Schema.define(version: 20140729182844) do
     t.integer  "scene_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.float    "tracking"
+    t.integer  "tracking"
   end
 
   create_table "users", force: true do |t|
