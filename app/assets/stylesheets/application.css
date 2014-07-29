@@ -16,4 +16,11 @@
  *= require foundation_and_overrides
 
  */
+@import "foundation_and_overrides";
 
+h1 { 
+	font-family: 'Sigmar One', cursive;
+	font-size: 40px;
+	font-weight: 400; 
+	color: green;
+}
