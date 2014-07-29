@@ -1,9 +1,5 @@
-<h1><%= @scene.date %>, <%= @scene.time %>, <%= @scene.location %>, <%= UserScene.tracking %><br /></h1>
+<h1><%= @scene.date %>, <%= @scene.time %>, <%= @scene.location %><br /></h1>
 <p><%= @scene.story_body %></p>
-
-
-
-<<<<<<< HEAD
 
 
 <% @scene.child_scenes.each do |child| %>
@@ -13,9 +9,3 @@
 	<% end %>
 
 <% end %>
-
-=======
-<% if @scene.parent_scene_id == 1 %>
-	<%= link_to "Choice One", "/scenes/2", class: 'button' %>
-<% end %>
->>>>>>> SMith
