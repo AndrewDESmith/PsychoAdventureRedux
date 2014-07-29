@@ -3,6 +3,7 @@
 
 
 
+<<<<<<< HEAD
 
 
 <% @scene.child_scenes.each do |child| %>
@@ -13,3 +14,8 @@
 
 <% end %>
 
+=======
+<% if @scene.parent_scene_id == 1 %>
+	<%= link_to "Choice One", "/scenes/2", class: 'button' %>
+<% end %>
+>>>>>>> SMith
