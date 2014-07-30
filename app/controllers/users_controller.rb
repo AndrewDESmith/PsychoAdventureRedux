@@ -1,10 +1,6 @@
 class UsersController < ApplicationController
 skip_before_filter :require_login, only: [:index, :new, :create]
 
-def import
-	Users.import(params[:file])
-end
-
 def new
 	@user = User.new
 end

@@ -1,11 +1,45 @@
-<h1><%= @scene.date %>, <%= @scene.time %>, <%= @scene.location %><br /></h1>
-<p><%= @scene.story_body %></p>
 
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
 
-<% @scene.child_scenes.each do |child| %>
-	<%= form_for UserScene.new do |f| %>
-		<%= hidden_field_tag :scene_id, child.id %>
-		<%= f.submit child.story_body %>
+    <a class="right-off-canvas-toggle" href="#" >Notebook</a>
+
+    <!-- Off Canvas Menu -->
+    <aside class="right-off-canvas-menu">
+        <!-- whatever you want goes here -->
+        <ul>
+          <li><a href="#">item1</a></li>
+          <li style="color:white"><% @clue_scenes.each do |clue_scene| %>
+      			<%= clue_scene.notebook_entry %>
+    		<% end %>
+    	</li>
+
+        </ul>
+    </aside>
+
+    <!-- main content goes here -->
+
+    <h1><%= @scene.date %>, <%= @scene.time %>, <%= @scene.location %><br /></h1>
+	<p><%= @scene.story_body %></p>
+
+	<% @scene.child_scenes.each do |child| %>
+		<%= form_for UserScene.new do |f| %>
+			<%= hidden_field_tag :scene_id, child.id %>
+			<%= f.submit child.story_body %>
+		<% end %>
+
 	<% end %>
 
-<% end %>
+  <!-- close the off-canvas menu -->
+  <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+scene_id,date,time,location,parent_scene_id,choice,story_body,relevant_clue,notebook_entry
+1,"July, 1947",dawn,"the crime scene, Santa Monica pier",,,"It has been a relentless, hot summer. But it has not been one for enjoying the weather with friends and family, cold beer in hand, grilling burgers and hot dogs.
+
+The citizens of LA have been terrorized by an unknown killer who dismembers his victims, leaving body parts around the city. The first victim was found only last month. A woman’s torso was found in a suitcase by the janitor of an elementary school, left beside a dumpster. A hand was mailed to the LAPD, the package reeking of rotting flesh, soaked in blood. The victim has not yet been identified.
+
+But the killer is at it again. This time, a note has been left behind, and the body part found is the other hand. It has been presumed that it must be from the same body. Both hands have similar characteristics. The left hand had an indent where a wedding ring probably sat. This was a woman who enjoyed doing her nails, as they were immaculate and painted with precision.
+
+It is 6:24am. A call came in to the LAPD by a woman in hysterics. She was out walking her dog along the Santa Monica pier. Her dog wouldn’t leave a particular spot alone, despite her best efforts to pull him away. When she finally went to see what the dog was making a fuss over, she made the grisly discovery.
+
+The ocean air tickles your nose with saltiness, the air is thick and dense. You are looking at the letter that lay under the severed hand. It is not handwritten. Rather, it is compiled of letters from multiple different sources, newspapers and the like.
+
+YOU KNOW THIS IS SO MUCH FUN
+THIS KILLING BUSINESS
+IT IS MUCH MORE ENTERTAINING
+THAN KILLING ANIMALS IN THE FOREST
+BETTER THAN AN ICE COLD BEER ON A HOT DAY
+OR GETTING OFF WITH SOME GIRL
+
+YOU WONT FIND ME, LAPD
+THERE ARE MORE
+THERE ARE MANY
+AND THEY ARE ALL MINE FOR THE TAKING.
+
+THIS LETTER MUST BE PUBLISHED IN THE LA TIMES ON THE FRONT PAGE. IF IT IS NOT DONE SO BEFORE THE WEEKEND, I WILL GO ON A RAMPAGE. I AM STARTING TO ENJOY THIS. I DO NOT KNOW IF I CAN CONTROL MYSELF.
+
+“Ah….shit”, you mutter under your breath. You’ve seen some crazy shit in your line of work, but this is something completely out of some twisted mind. A very sick mind indeed.
+
+What do you want to do?",TRUE,A womans hand was found at the Santa Monica pier.
+2,"July, 1947",dawn,"the crime scene, Santa Monica pier",1,The woman who found the severed hand is still at the scene of the crime. Do you want to go and talk to her?,The woman looks to be in her mid to late twenties. She is shaking and cannot stop crying. Ask her:,FALSE,
+3,"July, 1947",dawn,"the crime scene, Santa Monica pier",1,The coroner is also at the scene of the crime. Do you want to ask him some questions about the other body parts found?,The coroner is examining the hand. Ask:,FALSE,
+4,"July, 1947",dawn,"the crime scene, Santa Monica pier",1,Examine the surroundings. Do you want to look for more evidence?,"Footprints?
+Was something else dropped?
+Examine the letter.",FALSE,
+5,"July, 1947",dawn,"the crime scene, Santa Monica pier",2,Did you see anything or anyone suspicious on your walk?,"“It was very early in the morning, and there’s always people around here! But no one looked weird or crazy or suspicious.”",FALSE,
+6,"July, 1947",dawn,"the crime scene, Santa Monica pier",2,Do you come here for walks often?,"""I’m always here for walks! I like the beach and my dog likes to pee in the ocean!”",FALSE,
+7,"July, 1947",dawn,"the crime scene, Santa Monica pier",2,Is there anything else you can tell me about what you found?,"""No. I’m completely grossed out! I have to sleep this off.”",FALSE,
+8,"July, 1947",dawn,"the crime scene, Santa Monica pier",3,Do you see anything different about this hand vs. the other?,"“The only difference in both hands is there was clearly a wedding ring on the left hand. It has been removed. I cannot tell if the killer removed it, or the woman herself""",TRUE,The victim was married. The killer may be collecting trinkets from his victims..
+9,"July, 1947",dawn,"the crime scene, Santa Monica pier",3,Can we tell what type of weapon was used to sever the hands?,"""The cuts are well done and clean. He has used some sort of a surgical tool, perhaps a surgical saw, maybe a scalpel. Either way, he has access to such tools.""",TRUE,The killer appears to be using surgical tools.
+10,"July, 1947",dawn,"the crime scene, Santa Monica pier",3,Are we absolutely positive this is the same person?,"""Yes. The nails and nail polish are identical. He clearly admires her work as he didn’t do anything to the fingernails. Maybe he likes women who dress and present themselves fashionably?”",FALSE,
+11,"July, 1947",dawn,"the crime scene, Santa Monica pier",3,"Can you guess the age based on what body parts we have? We know this is a woman, but we need to have a better idea of her age. It may tell us who this guy is targeting and if a pattern starts to develop.","""I would put the victim in her early to mid twenties.”",TRUE,The victims was likely to be in her early-to-mid twenties
