@@ -6,13 +6,7 @@ class ScenesController < ApplicationController
 
   def show
   	@scene = Scene.find(params[:id])
-
-    # @child_scenes = Scene.where(parent_scene_id: @scene[:id])
-  
-    # @first_choice = @child_scenes[0]
-    # @second_choice = @child_scenes[1]
-    # @third_choice = @child_scenes[2]
-
+    @clue_scenes = current_user.scenes.where(:relevant_clue => true)
   end
 
   def new
