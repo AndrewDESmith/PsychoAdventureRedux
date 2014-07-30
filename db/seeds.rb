@@ -6,15 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-# old school!
-
-# Scene.create(location: "Planet Mars", story_body: "Test seed story_body entry numero dos.", parent_scene_id: 1, time: "8:00am", date: "July 1, 20XX", relevant_clue: true)
-# Scene.create(location: "Planet Mercury", story_body: "Test seed story_body entry numero tres.", parent_scene_id: 1, time: "9:00am", date: "July 2, 20XX", relevant_clue: false)
-# Scene.create(location: "Planet Venus", story_body: "Test seed story_body entry numero quatro.", parent_scene_id: 1, time: "10:00am", date: "July 3, 20XX", relevant_clue: false)
-# Scene.create(location: "Planet Jupiter", story_body: "Test seed story_body entry numero 5.", parent_scene_id: 2, time: "8:00am", date: "July 1, 20XX", relevant_clue: true)
-# Scene.create(location: "Planet Saturn", story_body: "Test seed story_body entry numero 6.", parent_scene_id: 2, time: "8:00am", date: "July 1, 20XX", relevant_clue: true)
-# Scene.create(location: "Planet Neptune", story_body: "Test seed story_body entry numero 7.", parent_scene_id: 2, time: "8:00am", date: "July 1, 20XX", relevant_clue: true)
-
 
 # new school: we'll be reading in from story_db_file.csv
 # let's assume this file is in lib/story/story_db_file.csv
@@ -52,10 +43,3 @@ puts
 # scene_id from file = 12
 # new_scene created has id of 48
 # scene_ids[12] = 48
-
-
-# row.to_hash.slice(:date, :time, :location, :parent_scene_id, :choice, :story_body, :relevant_clue, :notebook_entry)
-
-# 11,"July, 1947",dawn,"the crime scene, Santa Monica pier",3,"Can you guess the age based on what body parts we have? We know this is a woman, but we need to have a better idea of her age. It may tell us who this guy is targeting and if a pattern starts to develop.","""I would put the victim in her early to mid twenties.”",TRUE,The victims was likely to be in her early-to-mid twenties
-
-# row = {:date => "July, 1947", :location => "the crime scene, Santa Monica pier",...}
