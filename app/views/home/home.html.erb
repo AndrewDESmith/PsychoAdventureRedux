@@ -2,4 +2,9 @@
 <h1 class="headline">This is the Doctor speaking...</h1>
 
 
+<% if @scenes.first %>
+	<p><%= link_to "Begin.", "scenes/#{@scenes.first.id}" %></p>
+<% end %>
+
+
 
