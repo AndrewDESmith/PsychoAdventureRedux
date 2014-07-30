@@ -1,9 +1,10 @@
 class UsersController < ApplicationController
 skip_before_filter :require_login, only: [:index, :new, :create]
 
-def import
-	Users.import(params[:file])
-end
+# def import
+# 	Users.import(params[:file])
+# 	redirect_to root_url, notice: "Spreadsheet (CSV) imported."
+# end
 
 def new
 	@user = User.new

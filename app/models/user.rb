@@ -8,9 +8,9 @@ class User < ActiveRecord::Base
 
   validates :email, uniqueness: true
 
-  def self.import(file)
-  	CSV.foreach(file.path, headers: true) do |row|
-  			Users.create! row.to_hash
-  	end
-  end
+  # def self.import(file)
+  # 	CSV.foreach(file.path, headers: true) do |row|
+  # 			User.create! row.to_hash
+  # 	end
+  # end
 end
