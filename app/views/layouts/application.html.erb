@@ -12,6 +12,16 @@
 	</head>
 	<body>
 
+	
+	<div>
+		<p id="notice"><%= flash[:notice] %></p>
+	    <p id="alert"><%= flash[:alert] %></p>
+	</div>
+	<div class="container">
+
+		<%= yield %>
+	</div>
+	
 	<div id="nav">
 		<% if current_user %>
 	      <%= link_to "Logout", :logout, method: :post %>
@@ -20,12 +30,5 @@
 	      <%= link_to "Login", :login %>
 	    <% end %>
 	</div>
-	<div>
-		<p id="notice"><%= flash[:notice] %></p>
-	    <p id="alert"><%= flash[:alert] %></p>
-	</div>
-
-	<%= yield %>
-
 	</body>
 </html>

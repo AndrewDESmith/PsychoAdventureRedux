@@ -18,9 +18,14 @@
  */
 @import "foundation_and_overrides";
 
-h1 { 
+/*h1 { 
 	font-family: 'Sigmar One', cursive;
 	font-size: 40px;
 	font-weight: 400; 
 	color: green;
+}*/
+
+.container {
+	width: 900px;
+	margin: 0 auto;  
 }
