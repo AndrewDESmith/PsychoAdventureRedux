@@ -1,7 +1,8 @@
 <h1>Admin:  All Current Scenes</h1>
 
 <% @scenes.each do |scene| %>
-	<p><%= scene.date %><br />
+	<p>	<%= scene.id %><br />
+	<%= scene.date %><br />
 	<%= scene.time %><br />
 	<%= scene.location %><br />
 	<%= scene.story_body %><br />
