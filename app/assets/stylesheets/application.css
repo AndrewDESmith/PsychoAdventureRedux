@@ -10,10 +10,11 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require foundation
- *= require_self
  *= require foundation_and_overrides
+ *= require foundation
+ *= require_tree .
+ *= require_self
+ 
 
  */
 @import "foundation_and_overrides";
@@ -29,3 +30,25 @@
 	width: 900px;
 	margin: 0 auto;  
 }
+
+
+body {
+	background-color: #000000;
+}
+
+h1.headline { 
+	font-family: 'Sigmar One', cursive;
+	font-size: 40px;
+	font-weight: 400;
+	color: #990000;
+	text-align: center; 
+}
+
+div#nav {
+	font-family: 'Cutive Mono';
+	font-size: 30px;
+	font-weight: 400;
+	color: #FFFFFF;
+	text-align: center;
+}
+

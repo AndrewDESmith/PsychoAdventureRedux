@@ -3,10 +3,11 @@
 	<head>
 		<% javascript_include_tag "vendor/modernizr" %>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	  <title>PsychoAdventureRedux</title>
+	  <title>This is the Doctor speaking...</title>
 	  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 	  <link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
 	  <link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+	  <script type='text/javascript' src='homepage_fadein.js'></script>
 	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	  <%= csrf_meta_tags %>
 	</head>
@@ -17,11 +18,13 @@
 		<p id="notice"><%= flash[:notice] %></p>
 	    <p id="alert"><%= flash[:alert] %></p>
 	</div>
+	
 	<div class="container">
 
 		<%= yield %>
-	</div>
 	
+	</div>
+
 	<div id="nav">
 		<% if current_user %>
 	      <%= link_to "Logout", :logout, method: :post %>
