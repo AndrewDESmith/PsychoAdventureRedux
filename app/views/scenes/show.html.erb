@@ -9,7 +9,7 @@
         <!-- whatever you want goes here -->
         <ul>
           <li><a href="#">item1</a></li>
-          <li><% @clue_scenes.each do |clue_scene| %>
+          <li class="notebook-entries"><% @clue_scenes.each do |clue_scene| %>
       			<%= clue_scene.notebook_entry %>
     		<% end %>
     	</li>
@@ -19,8 +19,8 @@
 
     <!-- main content goes here -->
 
-    <h1><%= @scene.date %>, <%= @scene.time %>, <%= @scene.location %><br /></h1>
-	<p><%= @scene.story_body %></p>
+    <h1 class="title-text"><%= @scene.date %>, <%= @scene.time %>, <%= @scene.location %><br /></h1>
+	<p class="story-body"><%= @scene.story_body %></p>
 
 	<% @scene.child_scenes.each do |child| %>
 		<%= form_for UserScene.new do |f| %>
