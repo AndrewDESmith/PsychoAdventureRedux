@@ -30,6 +30,10 @@
     <% end %>
   <% end %>
    
+ 
+   <% if !@scene.child_scenes.any? %> 
+    <%= link_to 'Back', :back %>
+   <% end %>
 
   <!-- close the off-canvas menu -->
   <a class="exit-off-canvas"></a>
