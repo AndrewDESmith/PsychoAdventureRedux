@@ -8,7 +8,8 @@
     <aside class="right-off-canvas-menu">
         <!-- whatever you want goes here -->
         <ul>
-          <li style="color:white"><% @clue_scenes.each do |clue_scene| %>
+          <li><a href="#">item1</a></li>
+          <li class="notebook-entries"><% @clue_scenes.each do |clue_scene| %>
       			<%= clue_scene.notebook_entry %>
     		<% end %>
     	</li>
