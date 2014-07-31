@@ -14,21 +14,21 @@
  *= require foundation
  *= require_tree .
 
- 
+
 
  */
 @import "foundation_and_overrides";
 
-/*h1 { 
+/*h1 {
 	font-family: 'Sigmar One', cursive;
 	font-size: 40px;
-	font-weight: 400; 
+	font-weight: 400;
 	color: green;
 }*/
 
 .container {
 	width: 900px;
-	margin: 0 auto;  
+	margin: 0 auto;
 }
 
 
@@ -36,13 +36,13 @@ body {
 	background-color: #000000;
 }
 
-h1.headline { 
+h1.headline {
 	font-family: 'Sigmar One', cursive;
 	font-size: 60px;
 	font-weight: 400;
 	color: #FFFFFF;
 	text-align: center;
-	margin-top: 150px; 
+	margin-top: 150px;
 }
 
 h1.login {
@@ -66,6 +66,10 @@ div.error-messages {
 	color: #9E1919;
 }
 
+.title-text {
+	font-family: 'Sigmar One';
+}
+
 p.story-body {
 	font-family: 'Cutive Mono';
 	font-size: 20px;
@@ -73,4 +77,15 @@ p.story-body {
 	color: #FFFFFF;
 	text-align: justify;
 }
+
+.notebook-entries {
+	font-family: 'Marck Script';
+	font-size: 18px;
+}
+
+.right-off-canvas-menu {
+	background-image: url('public/images/notebook-background');
+}
+
+
 
