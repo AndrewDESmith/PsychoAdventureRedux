@@ -45,11 +45,32 @@ h1.headline {
 	margin-top: 150px; 
 }
 
+h1.login {
+	font-family: 'Cutive Mono';
+	font-size: 25px;
+	font-weight: 400;
+}
+
 div#nav {
 	font-family: 'Cutive Mono';
 	font-size: 50px;
 	font-weight: 400;
 	color: #FFFFFF;
 	text-align: center;
+}
+
+div.error-messages {
+	font-family: 'Cutive Mono';
+	font-size: 25px;
+	font-weight: 400;
+	color: #9E1919;
+}
+
+p.story-body {
+	font-family: 'Cutive Mono';
+	font-size: 20px;
+	font-weight: 400;
+	color: #FFFFFF;
+	text-align: justify;
 }
 
