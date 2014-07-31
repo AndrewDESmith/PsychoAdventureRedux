@@ -7,9 +7,11 @@
     <!-- Off Canvas Menu -->
     <aside class="right-off-canvas-menu">
         <!-- whatever you want goes here -->
-        <ul class="notebook-entries"><% @clue_scenes.each do |clue_scene| %>
-      			<li><%= clue_scene.notebook_entry %></li>
-    		  <% end %>
+        <ul>
+          <li class="notebook-entries"><% @clue_scenes.each do |clue_scene| %>
+      			<%= clue_scene.notebook_entry %>
+        		<% end %>
+        	</li>
         </ul>
     </aside>
 
@@ -24,11 +26,13 @@
 	  	<%= f.submit child.choice %>
     <% end %>
   <% end %>
-   
- 
-   <% if !@scene.child_scenes.any? %> 
-    <%= link_to 'Back', :back %>
-   <% end %>
+
+	<% if !@scene.child_scenes.any? %>
+		<div class="back">
+			<%= link_to "Back", :back %>
+		</div>
+	<% end %>
+
   <!-- close the off-canvas menu -->
   <a class="exit-off-canvas"></a>
 

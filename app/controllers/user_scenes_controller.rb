@@ -11,7 +11,6 @@ class UserScenesController < ApplicationController
 			@user_scene.user = current_user
 			@user_scene.scene_id = params[:scene_id]
 
-
 			if @user_scene.save
 				redirect_to scene_path(params[:scene_id])
 			else
