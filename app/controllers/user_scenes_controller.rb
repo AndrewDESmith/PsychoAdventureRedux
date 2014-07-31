@@ -3,7 +3,8 @@ class UserScenesController < ApplicationController
 		# if the current scene the user is on has already been logged in database, then it won't be repeated
 		# 1. find scene_id in database of all users' scenes
 		# 1MMM. find the current Scene among all Scenes this user has visited, if it exists
-		@existing_scene = current_user.scenes.find(params[:scene_id])
+		@scene = Scene.find(params[:scene_id])
+		@existing_scene = current_user.scenes.include?(@scene)
 
 		# 2. If no existing scene was found, create a new one
 		if !@existing_scene

@@ -23,7 +23,7 @@
 	<% @scene.child_scenes.each do |child| %>
 		<%= form_for UserScene.new do |f| %>
 			<%= hidden_field_tag :scene_id, child.id %>
-	  	<%= f.submit child.choice %>
+	  	<%= f.submit child.choice, class:'button' %>
     <% end %>
   <% end %>
 
