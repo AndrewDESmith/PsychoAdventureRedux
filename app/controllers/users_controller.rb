@@ -6,10 +6,11 @@ def new
 end
 
 def create
+	@scenes = Scene.all
   @user = User.new(user_params)
   	if @user.save
       auto_login(@user)
-  		redirect_to scenes_url, :notice => "Successfully signed up!"
+  		redirect_to "/scenes/#{@scenes.first.id}", :notice => "Successfully signed up!"
   	else
   		render "new"
   	end

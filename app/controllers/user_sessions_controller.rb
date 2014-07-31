@@ -6,8 +6,9 @@ class UserSessionsController < ApplicationController
   end
 
   def create
+  	@scenes = Scene.all
     if @user = login(params[:email], params[:password], params[:remember_me])
-      redirect_back_or_to(:scenes, notice: 'Login successful')
+      redirect_back_or_to "/scenes/#{@scenes.first.id}", notice: 'Login successful'
     else
       flash.now[:alert] = 'Login failed'
       render action: 'new'
