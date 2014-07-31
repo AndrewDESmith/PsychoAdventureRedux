@@ -1,3 +1,3 @@
 $(document).ready(function() {
-$('h1.headline, div#nav').hide().fadeIn(1300);
+$('h1.headline, div#nav, div.begin').hide().fadeIn(1300);
 });	
