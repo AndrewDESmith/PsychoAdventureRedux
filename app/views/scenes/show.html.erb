@@ -7,12 +7,10 @@
     <!-- Off Canvas Menu -->
     <aside class="right-off-canvas-menu">
         <!-- whatever you want goes here -->
-        <ul>
-          <li class="notebook-entries"><% @clue_scenes.each do |clue_scene| %>
-      			<%= clue_scene.notebook_entry %>
-        		<% end %>
-        	</li>
-        </ul>
+        <ul class="notebook-entries"><% @clue_scenes.each do |clue_scene| %>
+             <li><%= clue_scene.notebook_entry %></li>
+            <% end %>
+          </ul>
     </aside>
 
     <!-- main content goes here -->
