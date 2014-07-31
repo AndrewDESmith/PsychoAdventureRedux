@@ -18,16 +18,17 @@
 
     <!-- main content goes here -->
 
-    <h1><%= @scene.date %>, <%= @scene.time %>, <%= @scene.location %><br /></h1>
+    <h1 class="title-text"><%= @scene.date %>, <%= @scene.time %>, <%= @scene.location %><br /></h1>
 	<p class="story-body"><%= @scene.story_body %></p>
 
+ 
 	<% @scene.child_scenes.each do |child| %>
 		<%= form_for UserScene.new do |f| %>
 			<%= hidden_field_tag :scene_id, child.id %>
-			<%= f.submit child.choice %>
-		<% end %>
-
-	<% end %>
+	  	<%= f.submit child.choice %>
+    <% end %>
+  <% end %>
+   
 
   <!-- close the off-canvas menu -->
   <a class="exit-off-canvas"></a>
