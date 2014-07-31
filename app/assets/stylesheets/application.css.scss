@@ -100,8 +100,18 @@ p.story-body {
 }
 
 .right-off-canvas-menu {
-	background-image: url('public/images/notebook-background');
+	background-image: url('/notebook-background.jpg');
 }
 
+.right-off-canvas-toggle {
+	font-family: 'Marck Script';
+	font-size: 18px;
+}
 
+.scenes {
+	font-family: 'Cutive Mono';
+}
 
+.back {
+	font-family: 'Sigmar One';
+}
