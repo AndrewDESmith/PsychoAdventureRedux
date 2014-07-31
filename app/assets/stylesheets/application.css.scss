@@ -84,8 +84,13 @@ p.story-body {
 }
 
 .right-off-canvas-menu {
-	background-image: url('public/images/notebook-background');
+	background-image: url('/notebook-background.jpg');
 }
 
+.scenes {
+	font-family: 'Cutive Mono';
+}
 
-
+.back {
+	font-family: 'Sigmar One';
+}

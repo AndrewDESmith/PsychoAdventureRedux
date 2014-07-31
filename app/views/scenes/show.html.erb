@@ -8,7 +8,6 @@
     <aside class="right-off-canvas-menu">
         <!-- whatever you want goes here -->
         <ul>
-          <li><a href="#">item1</a></li>
           <li class="notebook-entries"><% @clue_scenes.each do |clue_scene| %>
       			<%= clue_scene.notebook_entry %>
     		<% end %>
@@ -27,9 +26,13 @@
 			<%= hidden_field_tag :scene_id, child.id %>
 			<%= f.submit child.choice %>
 		<% end %>
-
 	<% end %>
 
+	<% if !@scene.child_scenes.any? %>
+		<div class="back">
+			<%= link_to "Back", :back %>
+		</div>
+	<% end %>
   <!-- close the off-canvas menu -->
   <a class="exit-off-canvas"></a>
 
