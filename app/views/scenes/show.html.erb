@@ -2,7 +2,7 @@
 <div class="off-canvas-wrap" data-offcanvas>
   <div class="inner-wrap">
 
-    <a class="right-off-canvas-toggle" href="#" >Notebook</a>
+    <a class="right-off-canvas-toggle" href="#" >Click for Notebook</a>
 
     <!-- Off Canvas Menu -->
     <aside class="right-off-canvas-menu">
@@ -28,11 +28,6 @@
 	  	<%= f.submit child.choice %>
     <% end %>
   <% end %>
-
-
-   <% if !@scene.child_scenes.any? %>
-    <%= link_to 'Back', :back %>
-   <% end %>
 
 	<% if !@scene.child_scenes.any? %>
 		<div class="back">
