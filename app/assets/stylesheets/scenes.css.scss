@@ -1,9 +1,18 @@
-div {
+div.container{
+	min-height: 650px;
+}
+
+div.off-canvas-wrap {
 	color: #ffffff;
+	min-height: 650px;
 }
 
 h1 {
 	color: #ffffff;
+}
+
+div.inner-wrap{
+	min-height: 650px;
 }
 
 aside.right-off-canvas-menu {
@@ -12,5 +21,8 @@ aside.right-off-canvas-menu {
 	font-style: normal;
 	font-weight: 400;
 	color: #000000;
+	padding-left: 40px;
+	padding-top: 20px;
+	min-height: 100%; 
 }
 
